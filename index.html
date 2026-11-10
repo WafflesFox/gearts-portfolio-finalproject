@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEARTS Portfolio - Artes de Zorro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inconsolata:wght@400;700&family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="liquid-glass" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.01" numOctaves="2" seed="4" result="n"/><feGaussianBlur in="n" stdDeviation="3" result="s"/><feDisplacementMap in="SourceGraphic" in2="s" scale="28" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+  <div class="stage-frame" id="stage-frame">
+    <div class="stage" id="stage">
+      <canvas class="stage-bg" id="stage-bg"></canvas>
+
+      <section class="screen cover-screen is-active" id="cover-screen">
+        <svg class="cover-shape cover-shape-left" width="1059" height="821" viewBox="0 0 1059 821" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M529.5 8.09594e-07L988.06 615.75L70.9395 615.75L529.5 8.09594e-07Z" fill="url(#cover-left-gradient)"/>
+          <defs>
+            <linearGradient id="cover-left-gradient" x1="529.5" y1="-6.14669e-06" x2="621.356" y2="456.28" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#366EDE" stop-opacity="0.5"/>
+              <stop offset="1" stop-color="white" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg class="cover-shape cover-shape-top" width="1252" height="1361" viewBox="0 0 1252 1361" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M263.906 878.409L578.224 163.614L1035.32 999.413L263.906 878.409Z" fill="url(#cover-top-gradient)"/>
+          <defs>
+            <linearGradient id="cover-top-gradient" x1="263.906" y1="878.409" x2="624.232" y2="579.313" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#366EDE" stop-opacity="0.5"/>
+              <stop offset="1" stop-color="white" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg class="cover-shape cover-shape-right" width="1450" height="1443" viewBox="0 0 1450 1443" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M446.719 284.276L1171.44 436.867L1002.73 1158.01L278.006 1005.42L446.719 284.276Z" fill="url(#cover-right-gradient)"/>
+          <defs>
+            <linearGradient id="cover-right-gradient" x1="446.719" y1="284.276" x2="869.311" y2="682.226" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#366EDE" stop-opacity="0.5"/>
+              <stop offset="1" stop-color="white" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="cover-card">
+          <div class="cover-card-border"></div>
+          <div class="cover-card-glass"></div>
+          <img class="cover-logo" data-img="logo-cover" alt="Artes de Zorro" />
+          <h1 class="cover-title">GEARTS</h1>
+          <span class="cover-subtitle">Portfolio</span>
+        </div>
+
+        <div class="cover-orb"></div>
+
+        <p class="cover-credit cover-author"><span class="credit-label">Portfolio By:</span><br /><strong>Kirk Jedrik C. Balazon</strong></p>
+        <img class="cover-signature" data-img="signature" alt="" />
+        <p class="cover-credit cover-recipient"><span class="credit-label">Submitted to:</span><br /><strong>Doc. Jerrylyn Magbuo</strong></p>
+        <p class="cover-credit cover-brand">ARTES DE ZORRO</p>
+        <p class="cover-credit cover-tag">CREATIVE PORTFOLIO</p>
+
+        <button class="glass-button start-button" id="start-button" type="button">
+          <span class="start-button-label">START BROWSING</span>
+        </button>
+      </section>
+
+      <section class="screen browse-screen" id="browse-screen">
+        <svg class="browse-shapes" width="5204" height="2577" viewBox="0 0 5204 2577" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1768.91 878.409L2083.22 163.614L2540.32 999.413L1768.91 878.409Z" fill="url(#browse-gradient-1)"/>
+          <path d="M4215.91 878.409L4530.22 163.614L4987.32 999.413L4215.91 878.409Z" fill="url(#browse-gradient-2)"/>
+          <path d="M529.5 837L988.06 1452.75L70.9395 1452.75L529.5 837Z" fill="url(#browse-gradient-3)"/>
+          <path d="M1609.72 1418.28L2334.44 1570.87L2165.73 2292.01L1441.01 2139.42L1609.72 1418.28Z" fill="url(#browse-gradient-4)"/>
+          <path d="M2773.5 876L3232.06 1491.75L2314.94 1491.75L2773.5 876Z" fill="url(#browse-gradient-5)"/>
+          <path d="M3673.72 1084.28L4398.44 1236.87L4229.73 1958.01L3505.01 1805.42L3673.72 1084.28Z" fill="url(#browse-gradient-6)"/>
+          <path d="M5291.72 1451.28L6016.44 1603.87L5847.73 2325.01L5123.01 2172.42L5291.72 1451.28Z" fill="url(#browse-gradient-7)"/>
+          <defs>
+            <linearGradient id="browse-gradient-1" x1="1768.91" y1="878.409" x2="2129.23" y2="579.313" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+            <linearGradient id="browse-gradient-2" x1="4215.91" y1="878.409" x2="4576.23" y2="579.313" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+            <linearGradient id="browse-gradient-3" x1="529.5" y1="837" x2="621.356" y2="1293.28" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+            <linearGradient id="browse-gradient-4" x1="1609.72" y1="1418.28" x2="2032.31" y2="1816.23" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+            <linearGradient id="browse-gradient-5" x1="2773.5" y1="876" x2="2865.36" y2="1332.28" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+            <linearGradient id="browse-gradient-6" x1="3673.72" y1="1084.28" x2="4096.31" y2="1482.23" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+            <linearGradient id="browse-gradient-7" x1="5291.72" y1="1451.28" x2="5714.31" y2="1849.23" gradientUnits="userSpaceOnUse"><stop stop-color="#366EDE" stop-opacity="0.5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+          </defs>
+        </svg>
+
+        <div class="glass-squares" id="glass-squares" aria-hidden="true"></div>
+
+        <div class="shelf-scroller" id="shelf-scroller">
+          <div class="art-shelf" id="art-shelf">
+            <div class="shelf-panel"></div>
+
+            <button class="art-card" type="button" data-art="scribble" data-left="57">
+              <img class="art-thumb art-thumb-wide" data-img="scribble" alt="Scribble Art" />
+              <span class="art-label">Scribble Art</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="bookspine" data-left="770">
+              <img class="art-thumb art-thumb-narrow" data-img="bookspine" alt="Book Spine Poetry" />
+              <span class="art-label">Book Spine Poetry</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="coffee" data-left="1463">
+              <img class="art-thumb art-thumb-wide" data-img="coffee" alt="Coffee Painting" />
+              <span class="art-label">Coffee Painting</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="blackout" data-left="2190">
+              <img class="art-thumb art-thumb-wide" data-img="blackout" alt="Blackout Poetry" />
+              <span class="art-label">Blackout Poetry</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="ai" data-left="2917">
+              <img class="art-thumb art-thumb-wide" data-img="ai" alt="AI Appreciation Art" />
+              <span class="art-label">AI Appreciation ‘Art’</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="multimedia" data-left="3644">
+              <img class="art-thumb art-thumb-wide" data-img="multimedia" alt="Multi Media Film" />
+              <span class="art-label">Multi Media Film</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="painting" data-left="4371">
+              <img class="art-thumb art-thumb-wide" data-img="painting" alt="Painting" />
+              <span class="art-label">Painting</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="balota" data-left="5084">
+              <img class="art-thumb art-thumb-narrow" data-img="balota" alt="Balota" />
+              <span class="art-label">Balota</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="digital" data-new data-left="6003">
+              <img class="art-thumb art-thumb-wide" data-img="digital" alt="Digital Art" />
+              <span class="art-label">Digital Art</span>
+              <span class="new-badge">NEW</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="model" data-new data-left="6730">
+              <img class="art-thumb art-thumb-wide" data-img="model" alt="3D Model" />
+              <span class="art-label">3D Model</span>
+              <span class="new-badge">NEW</span>
+            </button>
+
+            <button class="art-card" type="button" data-art="song" data-new data-left="7457">
+              <img class="art-thumb art-thumb-wide" data-img="song" alt="Song" />
+              <span class="art-label">Song</span>
+              <span class="new-badge">NEW</span>
+            </button>
+
+            <svg class="favorite-star" data-left="1428" width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <use href="#star-shape" />
+            </svg>
+            <svg class="favorite-star" data-left="5968" width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <use href="#star-shape" />
+            </svg>
+            <svg class="favorite-star" data-left="7405" width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <use href="#star-shape" />
+            </svg>
+
+            <div class="journey-backdrop" aria-hidden="true"></div>
+            <h2 class="journey-title">My Artistic Journey</h2>
+            <p class="journey-text">The whole Art Semester is quite a journey... After everything we did, I have found out that nobody was laughing at me, they were cheering on! I feel like I just found myself better and that maybe I could actually do more than just Digital Art. I wanna try being flexible and create more Artwork that I dont normally do or haven’t done before, it may turn out good; I have to keep in mind that “bad attempts” are just steps to reach the Goal.
+
+P.S. Ascend outside the void</p>
+            <img class="shelf-fox" data-img="fox" alt="" />
+          </div>
+        </div>
+
+        <header class="browse-header">
+          <div class="browse-header-bar"></div>
+          <div class="browse-header-orb"></div>
+          <img class="browse-logo" data-img="logo-header" alt="Artes de Zorro" />
+          <h1 class="browse-title">ARTES DE ZORRO GALLERY</h1>
+        </header>
+
+        <svg width="0" height="0" class="symbol-sprite" aria-hidden="true">
+          <defs>
+            <symbol id="star-shape" viewBox="0 0 103 103">
+              <path d="M43.8608 18.1967C47.2083 11.6733 48.882 8.36874 51.5 8.36874C54.1179 8.36874 55.7916 11.6733 59.1391 18.2396L64.9329 29.6125C65.92 31.5008 66.392 32.445 67.2504 33.0458C68.1087 33.6467 69.1387 33.8183 71.2416 34.1617L83.8591 36.1787C91.155 37.3375 94.76 37.8954 95.5754 40.4275C96.4337 42.9167 93.7729 45.5346 88.58 50.7275L79.5675 59.74C78.0654 61.285 77.2929 62.0146 76.9925 63.0017C76.6491 63.9887 76.8208 65.0617 77.1641 67.1646L79.1383 79.7821C80.297 87.0779 80.855 90.6829 78.7091 92.2279C76.6062 93.7729 73.3445 92.0992 66.7783 88.7946L55.4054 82.9579C53.4741 82.0137 52.53 81.5417 51.5 81.5417C50.47 81.5417 49.5258 81.9708 47.6375 82.9579L36.2216 88.7517C29.6554 92.0992 26.3508 93.7729 24.2479 92.2279C22.145 90.6829 22.7029 87.0779 23.8187 79.7821L25.8358 67.1646C26.1791 65.0187 26.3508 63.9887 26.0075 63.0017C25.6641 62.0146 24.9345 61.285 23.4325 59.74L14.42 50.7275C9.22705 45.4917 6.60913 42.9167 7.42455 40.4275C8.23997 37.8954 11.845 37.3375 19.1408 36.1787L31.7583 34.1617C33.9041 33.8183 34.9341 33.6467 35.7495 33.0458C36.565 32.445 37.037 31.5008 38.067 29.6125L43.8608 18.1967Z" fill="#FFE603" stroke="#4D4500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+          </defs>
+        </svg>
+
+        <div class="art-overlay" id="art-overlay" hidden>
+          <div class="overlay-backdrop" id="overlay-backdrop"></div>
+          <div class="overlay-panel" id="overlay-panel" role="dialog" aria-modal="true"></div>
+        </div>
+
+        <div class="media-viewer" id="media-viewer" hidden>
+          <div class="media-viewer-backdrop" id="media-viewer-backdrop"></div>
+          <div class="media-viewer-card" id="media-viewer-card"></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="shader.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
